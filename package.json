@@ -1,0 +1,48 @@
+{
+  "name": "hotels-api",
+  "version": "1.0.0",
+  "description": "hotels - api",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "gulp default & babel src --out-dir dist",
+    "prestart": "npm run build",
+    "start": "node dist/app.js",
+    "dev": "npm run lint & set NODE_ENV=development & nodemon ./src/app.js --exec babel-node -e js"
+  },
+  "keywords": [
+    "hotels",
+    "api",
+    "node",
+    "es6"
+  ],
+  "author": "Jose Manuel Rios",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.2",
+    "express-es6-template-engine": "^2.0.3",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.0",
+    "signale": "^1.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "nodemon": "^1.17.1"
+  }
+}
