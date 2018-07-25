@@ -2,7 +2,7 @@
   "name": "hotels-api",
   "version": "1.0.0",
   "description": "hotels - api",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "lint": "eslint src",
     "build": "gulp default & babel src --out-dir dist",
@@ -16,7 +16,8 @@
     "node",
     "es6"
   ],
-  "author": "Jose Manuel Rios",
+  "author": "Jose Manuel Rios <manuel_ldsc@hotmail.com>",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
